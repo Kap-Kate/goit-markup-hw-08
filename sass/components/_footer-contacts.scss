@@ -1,0 +1,24 @@
+.footer-contacts {
+    &__item:nth-last-child(2) {
+        margin-bottom: 12px;
+    }
+
+    &__communication {
+        margin-right: 70px;
+        color: var(--color-text-footer);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__communication:hover,
+    &__communication:focus {
+        color: var(--color-akcent);
+    }
+
+}
+

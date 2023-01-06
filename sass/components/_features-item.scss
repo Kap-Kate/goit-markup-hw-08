@@ -1,0 +1,30 @@
+.features-item {
+    flex-basis: calc((100% - 90px) / 4);
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+    
+    &::before {
+        display: block;
+        content: '';
+        height: 120px;
+        background-color: var(--background-color-secondary);
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+    
+    &__title {
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        }
+    
+    &__text {
+        color: var(--color-text-secondary);
+        font-size: 14px;
+        line-height: 1.71;
+        }
+}
+

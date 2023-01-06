@@ -1,0 +1,33 @@
+.modal-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: var(--color-logo);
+    background-color: var(--background-color-primary);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+    }
+
+    &:hover {
+        color: var(--color-akcent);
+    }
+
+    &:focus {
+        color: var(--color-akcent);
+        outline: 0;
+    }
+}
+

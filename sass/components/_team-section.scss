@@ -1,0 +1,12 @@
+/* our team */
+.team {
+    background-color: var(--background-color-secondary);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    &__list {
+        display: flex;
+        }
+}
+

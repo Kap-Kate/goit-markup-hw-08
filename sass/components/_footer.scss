@@ -1,0 +1,25 @@
+/* footer */
+.footer-basic {
+    display: block;
+    background-color: var(--background-color-akcent);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 60px 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &__info {
+        margin-right: 70px;
+    }
+    &__title {
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: var(--background-color-primary);
+        margin-bottom: 20px;
+        }
+}

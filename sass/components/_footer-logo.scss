@@ -1,0 +1,21 @@
+.footer-logo {
+    margin-bottom: 28px;
+
+    &__web {
+        color: var(--color-akcent);
+    }
+
+    &__studio {
+        color: var(--background-color-primary);
+    }
+
+    &__web,
+    &__studio {
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+}
+

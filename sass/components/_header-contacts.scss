@@ -1,0 +1,33 @@
+/* contacts */
+.header-contacts {
+    display: flex;
+    &__item:not(:first-child) {
+            margin-left: 40px;
+        }
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: var(--color-text-secondary);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition-property: color;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4,0, 0.2, 1);
+        }
+    
+    &__link:hover,
+    &__link:focus {
+        color: var(--color-akcent);
+        }
+    
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+        }
+}
+
