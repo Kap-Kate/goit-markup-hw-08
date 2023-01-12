@@ -1,7 +1,11 @@
 /* subscribe */
 
 .subscription {
+    
+    @media (min-width: 1200px) {
     display: flex;
+    }
+    
 
     &__label {
         margin-right: 12px;

@@ -1,5 +1,9 @@
 .footer-logo {
+    margin-bottom: 20px;
+    @media (min-width: 1200px) {
     margin-bottom: 28px;
+    }
+    
 
     &__web {
         color: var(--color-akcent);

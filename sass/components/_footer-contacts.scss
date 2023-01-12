@@ -1,6 +1,11 @@
 .footer-contacts {
+    text-align: center;
+
     &__item:nth-last-child(2) {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
+    @media (min-width: 1200px) {
+         margin-bottom: 12px;   
+        }
     }
 
     &__communication {

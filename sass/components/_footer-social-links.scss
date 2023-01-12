@@ -1,5 +1,9 @@
 /* join-in footer */
 
 .footer-social-links {
+    margin-top: 60px;
+    @media (min-width: 1200px) {
     margin-right: 93px;
+    }
+    
 }

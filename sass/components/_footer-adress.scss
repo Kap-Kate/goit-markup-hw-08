@@ -3,5 +3,9 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+
+    @media (min-width: 1200px) {
+        margin-bottom: 12px;
+    }
 }
