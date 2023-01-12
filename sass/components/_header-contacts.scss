@@ -1,9 +1,6 @@
 /* contacts */
 .header-contacts {
-    display: flex;
-    &__item:not(:first-child) {
-            margin-left: 40px;
-        }
+    
     
     &__link {
         display: flex;
@@ -30,8 +27,14 @@
         fill: currentColor;
         }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
     display: none;
+}
+@media (min-width: 768px) {
+    display: flex;
+    &__item:not(:first-child) {
+    margin-left: 40px;
+            }   
 }
 }
 

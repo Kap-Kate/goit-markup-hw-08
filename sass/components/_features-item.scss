@@ -17,8 +17,12 @@
     
     &__title {
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         text-transform: uppercase;
+        text-align: center;
+        @media (min-width:481px) {
+            text-align: start;
+        }
         }
     
     &__text {
