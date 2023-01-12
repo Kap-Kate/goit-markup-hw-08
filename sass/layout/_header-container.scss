@@ -3,7 +3,7 @@
 .header-container {
     // display: inline;
 
-    @media (min-width: 480px) {
+    @media (min-width: 320px) {
         display: flex;
         justify-content: space-between;
     }   
