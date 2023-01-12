@@ -40,5 +40,9 @@
             background-color: var(--color-akcent);
             border-radius: 2px;
         }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    display: none;
+}
 }
 
