@@ -1,14 +1,19 @@
 .features-item {
+    flex-basis: calc((100% - 60px) / 2);
+    @media (min-width: 768px) {
+    &:nth-child(2n) {
+        margin-left: 30px;
+    }
+    }
+    @media (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 4);
-    
-    &:not(:last-child) {
-
-        @media (min-width: 481px) {
+    &:not(last-child) {
         margin-right: 30px;
-        }
-        
-        }
-    
+    }
+    &:nth-child(2n) {
+        margin-left: 0;
+    }
+    }
     &::before {
         display: block;
         content: '';
@@ -24,7 +29,7 @@
         line-height: 1.14;
         text-transform: uppercase;
         text-align: center;
-        @media (min-width:481px) {
+        @media (min-width:1200px) {
             text-align: start;
         }
         }
