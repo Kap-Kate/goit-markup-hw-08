@@ -1,27 +1,31 @@
 .customers-item {
     width: 210px;
     height: 92px;
-    @media (min-width: 768px) {
-        width: 226px;
-    }
+
     @media (min-width: 1200px) {
         width: 170px;
+        &:not(:last-child) {
+        margin-right: 30px;
     }
-    // &:nth-child(2n) {
-    // @media (max-width: 767px) {
-    //     margin-left: 30px;
+    }
+    &:nth-child(2n) {
+    @media (min-width: 480px) {
+        margin-left: 30px;
+    }
+    &:nth-child(n+1) {
+    @media (min-width: 768px) {
+        margin-left: 30px;
+    }
+    // &:nth-child(-n+3) {
+    //     margin-bottom: 30px;
     // }
-    }
-
-    &:nth-child(-n+4) {
-    @media (max-width: 767px) {
-        margin-bottom: 30px;
+    @media (min-width: 1200px) {
+        margin-left: 0;
     }
     }
 
-    &:not(:last-child) {
-            margin-right: 30px;
-    }
+
+    // 
 
     &__link {
         display: flex;
@@ -46,3 +50,5 @@
     &__icon {
         fill: currentColor;
     }
+}
+}
