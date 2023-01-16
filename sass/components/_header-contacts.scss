@@ -5,6 +5,8 @@
     @media (min-width: 1200px) {
         display: flex;
         align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     
     &__link {
@@ -19,7 +21,10 @@
         transition-property: color;
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4,0, 0.2, 1);
-
+    @media (min-width: 1200px) {
+        display: flex;
+        
+    }   
     }
     
     &__link:hover,

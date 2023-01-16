@@ -26,12 +26,12 @@
         padding-top: 30px;
         padding-bottom: 16px;
         }
-    // &__photo {
-    // // //     width: 270px;
-    // // // @media (min-width: 1199px) {
-    // // //     width: 450px;
-    // // }
-    
+    &__photo {
+         width: 450px;
+    @media (min-width: 1200px) {
+       width: 270px;
+    }
+}   
     &__name {
         color: var(--color-text-primary);
         font-weight: 500;

@@ -1,6 +1,4 @@
 .footer-contacts {
-    text-align: center;
-
     &__item:nth-last-child(2) {
         margin-bottom: 8px;
     @media (min-width: 1200px) {
@@ -9,7 +7,7 @@
     }
 
     &__communication {
-        margin-right: 70px;
+        
         color: var(--color-text-footer);
         font-style: normal;
         font-weight: 400;
@@ -18,6 +16,9 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media (min-width: 1200px) {
+        margin-right: 70px;
+        }
     }
 
     &__communication:hover,
