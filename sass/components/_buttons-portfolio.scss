@@ -1,6 +1,9 @@
 
 .button-portfolio:not(:last-child) {
     margin-right: 8px;
+    @media (max-width: 767px) {
+    margin-bottom: 15px;
+    }
 }
 
 .button-portfolio__name {

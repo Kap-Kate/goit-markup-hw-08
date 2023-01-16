@@ -1,5 +1,10 @@
 .button-list {
     display: flex;
     margin-bottom: 50px;
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
