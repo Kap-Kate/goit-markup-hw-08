@@ -10,9 +10,8 @@
     }
     
     &__link {
+        display: flex;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
         color: var(--color-text-secondary);
         font-weight: 500;
         font-size: 14px;
@@ -22,7 +21,8 @@
         transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4,0, 0.2, 1);
     @media (min-width: 1200px) {
-        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
         
     }   
     }

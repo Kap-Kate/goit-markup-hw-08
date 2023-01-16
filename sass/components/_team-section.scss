@@ -6,11 +6,9 @@
     margin-left: auto;
 
     &__list {
-        
         @media (min-width: 768px) {
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap; 
         }
         @media (min-width: 1200px) {
         display: flex;

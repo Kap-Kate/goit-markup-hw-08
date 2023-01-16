@@ -1,6 +1,7 @@
 .features-item {
     flex-basis: calc((100% - 60px) / 2);
     @media (min-width: 768px) {
+        max-width: 450px;
     &:nth-child(2n) {
         margin-left: 30px;
     }
