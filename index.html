@@ -33,9 +33,10 @@
             <li class="nav-list__item"><a href="#" class="nav-list__page">Контакти</a></li>
           </ul>
         </nav>
-        <button class="header__burger" type="button">
-          <svg class="" width="40px" height="40px">
-            <use href="./img/icons.svg#menu-icon"></use>
+        <button class="header__burger" type="button" data-menu-button>
+          <svg class="" width="40px" height="40px" aria-label="Переключатель мобільного меню">
+            <use class="header__burger__icon-burger" href="./img/icons.svg#icon-burger"></use>
+            <use class="header__burger__icon-close-burger" href="./img/icons.svg#icon-close-burger"></use>
           </svg>
         </button>
         <ul class="header-contacts">
@@ -460,6 +461,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
