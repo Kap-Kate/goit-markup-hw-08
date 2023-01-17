@@ -1,0 +1,21 @@
+.menu-container {
+    @media (min-width: 320px) and (max-width: 767px) {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    // height: 100%;
+    padding: 48px 40px;
+    background-color: var(--background-color-primary);
+    display: none;
+    &.is-open {
+        display: block;
+    }
+    }
+    @media (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    }
+    
+}

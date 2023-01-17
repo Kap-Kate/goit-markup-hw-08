@@ -1,9 +1,11 @@
 /* header container */
 
 .header-container {
-
+    position: relative;
+    
     @media (min-width: 320px) {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }   
     }

@@ -6,17 +6,17 @@
         &__icon-close-burger {
             display: none;
         }
-        
+    .header__burger.is-open &__icon-close-burger {
+        display: block;
+        }
+   .header__burger.is-open &__icon-burger {
+       display: none;
+   }
         @media (min-width: 768px) {
             display: none;
         }
    
     }
-         .header__burger.is-open .icon-close-burger {
-            border: 1px solid red;
-             display: block;
-         }
+         
     
-        //  .header__burger.is-open .icon-burger {
-        //      display: none;
-        //  }
+      
