@@ -1,18 +1,24 @@
 /* site nav */
 
 .nav-list {
-   
+    margin-bottom: 100px;
+  
     &__item:not(:last-child) {
+     margin-bottom: 32px;   
     @media (min-width: 768px) {
         margin-right: 50px;
+        margin-bottom: 0;
     }    
     }
     
     &__page,
     &__page--active {
         display: block;
+        @media (min-width: 768px) {
         padding-top: 32px;
         padding-bottom: 32px;
+        }
+        
         color: var(--color-text-primary);
         transition-property: color;
         transition-duration: 250ms;
