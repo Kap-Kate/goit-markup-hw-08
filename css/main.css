@@ -119,6 +119,7 @@ a {
   .menu-container {
     position: absolute;
     position: fixed;
+    overflow: scroll;
     top: 0;
     left: 0;
     width: 100%;
