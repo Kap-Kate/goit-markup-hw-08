@@ -1,11 +1,11 @@
 .menu-container {
     @media (min-width: 320px) and (max-width: 767px) {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 0;
     width: 100%;
     // height: 100%;
-    padding: 48px 40px;
+    padding: 0 40px;
     background-color: var(--background-color-primary);
     display: none;
     &.is-open {
@@ -17,5 +17,20 @@
     flex-grow: 1;
     justify-content: space-between;
     }
-    
+
+
+    &__social-links {
+        display: flex;
+        margin-top: 64px;
+        margin-bottom: 48px;
+        color: var(--color-akcent);
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-right: 10px;
+        border-right: 1px solid var(--header-border-color);
+        padding-right: 10px;
+    }
 }

@@ -1,11 +1,18 @@
 .modal {
     position: absolute;
+    overflow: scroll;
     top: 50%;
     left: 50%;
-    width: 528px;
-    max-width: 528px;
-    height: 581px;
-    max-height: 581px;
+    width: 450px;
+    max-width: 450px;
+    height: 609px;
+    max-height: 609px;
+    @media (min-width:768px) {
+        width: 528px;
+        max-width: 528px;
+        height: 581px;
+        max-height: 581px;
+    }
     background-color: var(--background-color-primary);
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);

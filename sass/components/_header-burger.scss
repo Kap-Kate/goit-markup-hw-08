@@ -8,6 +8,7 @@
         }
     .header__burger.is-open &__icon-close-burger {
         display: block;
+        fill: var(--color-akcent);
         }
    .header__burger.is-open &__icon-burger {
        display: none;
