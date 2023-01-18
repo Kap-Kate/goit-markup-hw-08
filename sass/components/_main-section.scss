@@ -8,14 +8,14 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-image: url(/img/background-phone.jpg);
+    background-image: url(../img/background-phone.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/img/background-phone.jpg);
+        url(../img/background-phone.jpg);
     
         @media (min-width: 768px) and (max-width: 1199px) {
-    background-image: url(/img/background-tablet.jpg);
+    background-image: url(../img/background-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/img/background-tablet.jpg);
+        url(../img/background-tablet.jpg);
     }
     
     @media (min-width: 1200px) {
