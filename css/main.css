@@ -1320,7 +1320,12 @@ a {
   border: 1px solid var(--border-color);
   border-top: 0;
   padding: 20px 24px;
-  width: 370px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .projects-card__info {
+    width: 370px;
+  }
 }
 .projects-card__name {
   margin-bottom: 4px;
@@ -1382,6 +1387,14 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 767px) {
+  .projects-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .projects-list__item {

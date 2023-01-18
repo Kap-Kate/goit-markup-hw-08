@@ -12,7 +12,10 @@
         border: 1px solid var(--border-color);
         border-top: 0;
         padding: 20px 24px;
+        @media (max-width: 767px) {
         width: 370px;
+        }
+        width: 100%;
         
     }
 
