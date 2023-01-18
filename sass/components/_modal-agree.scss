@@ -6,9 +6,15 @@
     align-items: center;
     height: 24px;
     color: var(--color-text-secondary);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    @media (min-width: 768px) {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    }
+    
     margin-bottom: 30px;
 
     &__checkbox {
