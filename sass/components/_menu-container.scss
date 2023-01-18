@@ -1,11 +1,9 @@
 .menu-container {
-    
    
     @media (min-width: 320px) and (max-width: 767px) {
     position: absolute;
-    
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -27,7 +25,6 @@
     &__social-links {
         display: flex;
         margin-top: 64px;
-        // margin-bottom: 48px;
         color: var(--color-akcent);
         @media (max-width: 480px) {
             flex-wrap: wrap;
@@ -41,7 +38,7 @@
         margin-right: 10px;
         border-right: 1px solid var(--header-border-color);
         padding-right: 10px;
-        // margin-bottom: 5px;
+        margin-bottom: 5px;
         
     }
 }

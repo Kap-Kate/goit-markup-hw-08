@@ -119,7 +119,7 @@ a {
   .menu-container {
     position: absolute;
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -166,6 +166,7 @@ a {
   margin-right: 10px;
   border-right: 1px solid var(--header-border-color);
   padding-right: 10px;
+  margin-bottom: 5px;
 }
 
 .header__burger {
@@ -289,12 +290,26 @@ a {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../img/background.jpg);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
+  background-image: url(/img/background-phone.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/background-phone.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background-phone.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main {
+    background-image: url(/img/background-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/background-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background-tablet.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    background-image: url(../img/background.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
+  }
 }
 .main__title {
   margin-bottom: 30px;
@@ -973,7 +988,7 @@ a {
   overflow: scroll;
   top: 50%;
   left: 50%;
-  margin-top: 100px;
+  margin-top: 70px;
   width: 450px;
   max-width: 450px;
   height: 609px;
