@@ -277,8 +277,10 @@ a {
     fill: currentColor;
   }
 }
-.header-contacts__item:not(:first-child) {
-  margin-bottom: 32px;
+@media (max-width: 767px) {
+  .header-contacts__item:not(:first-child) {
+    margin-bottom: 32px;
+  }
 }
 @media (min-width: 768px) {
   .header-contacts__item:not(:first-child) {
@@ -1387,9 +1389,13 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+@media (max-width: 768px) {
+  .projects-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media (max-width: 767px) {
   .projects-list__item:not(:last-child) {

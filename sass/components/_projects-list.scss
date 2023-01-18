@@ -1,8 +1,9 @@
 .projects-list {
-    
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
     justify-content: center;
+    } 
     
     &__item:not(:last-child) {
         @media (max-width: 767px) {
