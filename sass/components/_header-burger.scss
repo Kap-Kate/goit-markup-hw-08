@@ -9,16 +9,14 @@
         }
     .header__burger.is-open &__icon-close-burger {
         display: block;
-        // z-index: 3;
         fill: var(--color-akcent);
         }
    .header__burger.is-open &__icon-burger {
-       display: none;
-   }
+        display: none;
+        }
         @media (min-width: 768px) {
             display: none;
         }
-   
     }
          
     
