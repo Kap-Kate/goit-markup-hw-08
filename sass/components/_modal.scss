@@ -8,6 +8,12 @@
     max-width: 450px;
     height: 609px;
     max-height: 609px;
+    @media (min-width:320px) and (max-width: 479px) {
+    width: 320px;
+    max-width: 320px;
+    height: 609px;
+    max-height: 609px;
+    }
     @media (min-width:768px) {
         width: 528px;
         max-width: 528px;
