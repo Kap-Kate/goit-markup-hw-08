@@ -304,14 +304,26 @@ a {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url(../img/background-phone.jpg);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background-phone.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-phone.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main {
+    background-image: url(../img/background-phone.jpg);
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background-phone.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-phone.jpg);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+  .main {
+    background-image: url(../img/background-phone.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background-phone.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-phone.jpg);
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .main {
@@ -320,7 +332,23 @@ a {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-tablet.jpg);
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi) {
+  .main {
+    background-image: url(../img/background-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-tablet.jpg);
+  }
+}
 @media (min-width: 1200px) {
+  .main {
+    background-image: url(../img/background.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi) {
   .main {
     background-image: url(../img/background.jpg);
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background.jpg);
