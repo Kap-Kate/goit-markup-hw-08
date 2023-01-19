@@ -4,12 +4,14 @@
         border: none;
         display: block;
         padding-top: 10px;
+        z-index: 1;
         &__icon-close-burger {
         display: none;
         }
     .header__burger.is-open &__icon-close-burger {
         display: block;
         fill: var(--color-akcent);
+        
         }
    .header__burger.is-open &__icon-burger {
         display: none;

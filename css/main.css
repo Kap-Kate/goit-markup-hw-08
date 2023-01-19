@@ -130,6 +130,7 @@ a {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 0;
   }
 }
 @media (min-width: 768px) {
@@ -175,6 +176,7 @@ a {
   border: none;
   display: block;
   padding-top: 10px;
+  z-index: 1;
 }
 .header__burger__icon-close-burger {
   display: none;
