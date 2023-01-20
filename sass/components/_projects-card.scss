@@ -6,6 +6,10 @@
         width: 100%;
         height: 294px;
         overflow: hidden;
+        pointer-events: none
+    }
+    &__card {
+        height: 100%;
     }
 
     &__info {
@@ -34,7 +38,7 @@
     }
 
     &__overlay {
-        display: flex;
+        // display: flex;
         position: absolute;
         width: 100%;
         height: 100%;
