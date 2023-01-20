@@ -62,10 +62,10 @@
             </li>
           </ul>
           <ul class="menu-container__social-links">
-            <li class="menu-container__item">Instagram</li>
-            <li class="menu-container__item">Twitter</li>
-            <li class="menu-container__item">Facebook</li>
-            <li class="menu-container__item">LinkedIn</li>
+            <li class="menu-container__item"><a href="#">Instagram</a></li>
+            <li class="menu-container__item"><a href="#">Twitter</a></li>
+            <li class="menu-container__item"><a href="#">Facebook</a></li>
+            <li class="menu-container__item"><a href="#">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -130,9 +130,12 @@
             </li>
             <li class="offers-item">
               <div class="offers-item__card">
-                <img 
-                srcset="img/box2.jpg 1x, img/box2@2x.jpg 2x"
-                src="img/box2.jpg" alt="дизайнер розробляє мобільний додаток" width="370" />
+                <img
+                  srcset="img/box2.jpg 1x, img/box2@2x.jpg 2x"
+                  src="img/box2.jpg"
+                  alt="дизайнер розробляє мобільний додаток"
+                  width="370"
+                />
                 <p class="offers-item__description">Мобільні додатки</p>
               </div>
             </li>
@@ -156,7 +159,17 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team-card">
-              <img class="team-card__photo" src="img/img.jpg" alt="Дизайнер продукту" width="270" />
+              <picture>
+                <source srcset="img/img-1.webp 1x, img/img-1@2x.webp 2x" type="image/webp" />
+                <source srcset="img/img-1.jpg 1x, img/img-1@2x.jpg 2x" type="image/jpg" />
+                <img
+                  class="team-card__photo"
+                  src="img/img-1.jpg"
+                  alt="Дизайнер продукту"
+                  width="270"
+                />
+              </picture>
+              <!-- <img class="team-card__photo" src="img/img-1.jpg" alt="Дизайнер продукту" width="270" /> -->
               <div class="team-card__info">
                 <h3 class="team-card__name">Ігор Дем'яненко</h3>
                 <p class="team-card__member-profession">Product Designer</p>
