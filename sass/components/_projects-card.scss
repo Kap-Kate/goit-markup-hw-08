@@ -12,7 +12,9 @@
         height: 100%;
     }
 
-    &__info {
+    
+    &__info,
+    &__info--first {
         border: 1px solid var(--border-color);
         border-top: 0;
         padding: 20px 24px;
@@ -21,6 +23,12 @@
         }
         width: 100%;
         
+    }
+    
+    &__info--first {
+        @media (min-width: 768px) and (max-width: 1199px) {
+        padding: 38px 24px;
+    }
     }
 
     &__name {

@@ -4,20 +4,17 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    margin-bottom: auto;
+
     // @media (max-width: 767px) {
     // margin-bottom: auto;
     // }
 
     @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em; 
     } 
-
-    @media (min-width: 768px) {
-        display: flex;
-        align-items: center;
-    }
 }

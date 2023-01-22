@@ -522,11 +522,13 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <label class="agree">
-            <input class="agree__checkbox" type="checkbox" name="mailing" />
+          <div class="agree">
+            <input class="agree__checkbox" type="checkbox" name="mailing" id="mailing" />
             <div class="agree__icon"></div>
-            Погоджуюся з розсилкою та приймаю<a href="#" class="agree__link">Умови договору</a>
-          </label>
+            <label  for="mailing">
+              Погоджуюся з розсилкою та приймаю<a href="#" class="agree__link">Умови договору</a>
+            </label> 
+          </div>
           <button class="send-button" type="submit">Відправити</button>
         </form>
       </div>
