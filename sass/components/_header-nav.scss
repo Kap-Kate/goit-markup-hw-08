@@ -5,9 +5,9 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    // @media (max-width: 767px) {
-    // margin-bottom: auto;
-    // }
+    @media (max-width: 767px) {
+    margin-bottom: auto;
+    }
 
     @media (min-width: 768px) {
         display: flex;
