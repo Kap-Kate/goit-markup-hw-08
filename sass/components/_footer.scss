@@ -1,6 +1,5 @@
 /* footer */
 .footer-basic {
-    display: block;
     background-color: var(--background-color-akcent);
     margin-right: auto;
     margin-left: auto;
@@ -8,17 +7,25 @@
 }
 
 .footer {
-    text-align: center;
-    @media (min-width: 1200px) {
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: baseline;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    @media (min-width: 1200px) {
     justify-content: space-between;
-    align-items: baseline; 
-    text-align: start;
+    text-align: left;
     }
 
     &__info {
     @media (min-width: 768px) and (max-width: 1199px) {
-        display: inline-block;
+        margin-right: 165px;
         margin-bottom: 60px;
     }
     @media (min-width: 1200px) {

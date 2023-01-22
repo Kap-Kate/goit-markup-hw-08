@@ -67,11 +67,11 @@ a {
 }
 
 .header__nav {
-  display: inline-block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  margin-bottom: auto;
 }
 @media (min-width: 768px) {
   .header__nav {
@@ -117,19 +117,32 @@ a {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     position: fixed;
     overflow: scroll;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 48px 40px;
     background-color: var(--background-color-primary);
-    display: none;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: linear 250ms;
+    transition: linear 250ms;
+    opacity: 0;
   }
   .menu-container.is-open {
-    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
     z-index: 0;
   }
 }
@@ -757,7 +770,6 @@ a {
 
 /* footer */
 .footer-basic {
-  display: block;
   background-color: var(--background-color-akcent);
   margin-right: auto;
   margin-left: auto;
@@ -765,25 +777,46 @@ a {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    text-align: start;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__info {
-    display: inline-block;
+    margin-right: 165px;
     margin-bottom: 60px;
   }
 }
@@ -867,16 +900,10 @@ a {
 }
 
 /* join-in footer */
-.footer-social-links {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .footer-social-links {
-    display: inline-block;
-    margin-left: 165px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -1033,11 +1060,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 120px;
-  width: 450px;
-  max-width: 450px;
+  width: 100%;
   height: 609px;
-  max-height: 609px;
   background-color: var(--background-color-primary);
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1049,20 +1073,16 @@ a {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media (min-width: 320px) and (max-width: 479px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .modal {
-    width: 320px;
-    max-width: 320px;
+    width: 450px;
     height: 609px;
-    max-height: 609px;
   }
 }
 @media (min-width: 768px) {
   .modal {
     width: 528px;
-    max-width: 528px;
     height: 581px;
-    max-height: 581px;
   }
 }
 .modal__title {
@@ -1539,11 +1559,6 @@ a {
 }
 
 /* site nav */
-@media (max-width: 767px) {
-  .nav-list {
-    margin-bottom: 150px;
-  }
-}
 .nav-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
