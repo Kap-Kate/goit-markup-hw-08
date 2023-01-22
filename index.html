@@ -22,21 +22,22 @@
     <header class="header">
       <div class="container header-container">
         <a href="./index.html" class="logo">Web<span class="logo__logo-studio">Studio</span></a>
-        <button class="header__burger" type="button" data-menu-button>
-          <svg class="" width="40px" height="40px" aria-label="Переключатель мобільного меню">
-            <use
-              class="header__burger__icon-burger"
-              href="./img/icons.svg#icon-burger"
-          
-            ></use>
-            <use
-              class="header__burger__icon-close-burger"
-              href="./img/icons.svg#icon-close-burger"
-              
-            ></use>
+        <div>
+          <button class="js-open-menu" type="button">
+          <svg width="40px" height="40px">
+            <use class="js-open-menu__icon-burger" href="./img/icons.svg#icon-burger"></use>
           </svg>
         </button>
-        <div class="menu-container" id="menu-container" data-menu>
+        <button class="js-close-menu" type="button" >
+          <svg width="40px" height="40px">
+            <use
+              class="js-close-menu__icon-close-burger" href="./img/icons.svg#icon-close-burger"></use>
+          </svg>
+        </button>
+        </div>
+        
+
+        <div class="js-menu-container" id="menu-container">
           <nav class="header__nav">
             <ul class="nav-list">
               <li class="nav-list__item">
@@ -66,11 +67,11 @@
               </a>
             </li>
           </ul>
-          <ul class="menu-container__social-links">
-            <li class="menu-container__item"><a href="#">Instagram</a></li>
-            <li class="menu-container__item"><a href="#">Twitter</a></li>
-            <li class="menu-container__item"><a href="#">Facebook</a></li>
-            <li class="menu-container__item"><a href="#">LinkedIn</a></li>
+          <ul class="js-menu-container__social-links">
+            <li class="js-menu-container__item"><a href="#">Instagram</a></li>
+            <li class="js-menu-container__item"><a href="#">Twitter</a></li>
+            <li class="js-menu-container__item"><a href="#">Facebook</a></li>
+            <li class="js-menu-container__item"><a href="#">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -177,20 +178,40 @@
           <ul class="team__list">
             <li class="team-card">
               <picture>
-                <source srcset="img/img-1-phone.webp 1x, img/img-1-phone@2x.webp 2x" media="(max-width: 767px)"  type="image/webp" />
-                <source srcset="img/img-1-phone.jpg 1x, img/img-1-phone@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
-                
-                <source srcset="img/img-1-tablet.webp 1x, img/img-1-tablet@2x.webp 2x" media="(max-width: 1199px)"   type="image/webp" />
-                <source srcset="img/img-1-tablet.jpg 1x, img/img-1-tablet@2x.jpg 2x" media="(max-width: 1199px)" type="image/jpg" />
-                
-                <source srcset="img/img-1.webp 1x, img/img-1@2x.webp 2x" media="(min-width: 1200px)"  type="image/webp" />
-                <source srcset="img/img-1.jpg 1x, img/img-1@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
-                
-                <img
-                  class="team-card__photo"
-                  src="img/img-1.jpg"
-                  alt="Дизайнер продукту"
+                <source
+                  srcset="img/img-1-phone.webp 1x, img/img-1-phone@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
                 />
+                <source
+                  srcset="img/img-1-phone.jpg 1x, img/img-1-phone@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="img/img-1-tablet.webp 1x, img/img-1-tablet@2x.webp 2x"
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-1-tablet.jpg 1x, img/img-1-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="img/img-1.webp 1x, img/img-1@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-1.jpg 1x, img/img-1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+
+                <img class="team-card__photo" src="img/img-1.jpg" alt="Дизайнер продукту" />
               </picture>
               <div class="team-card__info">
                 <h3 class="team-card__name">Ігор Дем'яненко</h3>
@@ -229,19 +250,39 @@
             </li>
             <li class="team-card">
               <picture>
-                <source srcset="img/img-2-phone.webp 1x, img/img-2-phone@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-                <source srcset="img/img-2-phone.jpg 1x, img/img-2-phone@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
-
-                <source srcset="img/img-2-tablet.webp 1x, img/img-2-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp" />
-                <source srcset="img/img-2-tablet.jpg 1x, img/img-2-tablet@2x.jpg 2x" media="(max-width: 1199px)" type="image/jpg" />
-
-                <source srcset="img/img-2.webp 1x, img/img-2@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
-                <source srcset="img/img-2.jpg 1x, img/img-2@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
-                <img
-                  class="team-card__photo"
-                  src="img/img-2.jpg"
-                  alt="Розробник інтерфейсу"
+                <source
+                  srcset="img/img-2-phone.webp 1x, img/img-2-phone@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
                 />
+                <source
+                  srcset="img/img-2-phone.jpg 1x, img/img-2-phone@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="img/img-2-tablet.webp 1x, img/img-2-tablet@2x.webp 2x"
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-2-tablet.jpg 1x, img/img-2-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="img/img-2.webp 1x, img/img-2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-2.jpg 1x, img/img-2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img class="team-card__photo" src="img/img-2.jpg" alt="Розробник інтерфейсу" />
               </picture>
               <div class="team-card__info">
                 <h3 class="team-card__name">Ольга Рєпіна</h3>
@@ -280,19 +321,39 @@
             </li>
             <li class="team-card">
               <picture>
-                <source srcset="img/img-3-phone.webp 1x, img/img-3-phone@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-                <source srcset="img/img-3-phone.jpg 1x, img/img-3-phone@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
-
-                <source srcset="img/img-3-tablet.webp 1x, img/img-3-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp" />
-                <source srcset="img/img-3-tablet.jpg 1x, img/img-3-tablet@2x.jpg 2x" media="(max-width: 1199px)" type="image/jpg" />
-               
-                <source srcset="img/img-3.webp 1x, img/img-3@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
-                <source srcset="img/img-3.jpg 1x, img/img-3@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
-                <img
-                  class="team-card__photo"
-                  src="img/img-3.jpg"
-                  alt="Відділ маркетингу"
+                <source
+                  srcset="img/img-3-phone.webp 1x, img/img-3-phone@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
                 />
+                <source
+                  srcset="img/img-3-phone.jpg 1x, img/img-3-phone@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="img/img-3-tablet.webp 1x, img/img-3-tablet@2x.webp 2x"
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-3-tablet.jpg 1x, img/img-3-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                  type="image/jpg"
+                />
+
+                <source
+                  srcset="img/img-3.webp 1x, img/img-3@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-3.jpg 1x, img/img-3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <img class="team-card__photo" src="img/img-3.jpg" alt="Відділ маркетингу" />
               </picture>
               <div class="team-card__info">
                 <h3 class="team-card__name">Микола Тарасов</h3>
@@ -331,14 +392,38 @@
             </li>
             <li class="team-card">
               <picture>
-                <source srcset="img/img-4-phone.webp 1x, img/img-4-phone@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-                <source srcset="img/img-4-phone.jpg 1x, img/img-4-phone@2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
+                <source
+                  srcset="img/img-4-phone.webp 1x, img/img-4-phone@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-4-phone.jpg 1x, img/img-4-phone@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
 
-                <source srcset="img/img-4-tablet.webp 1x, img/img-4-tablet@2x.webp 2x" media="(max-width: 1199px)" type="image/webp" />
-                <source srcset="img/img-4-tablet.jpg 1x, img/img-4-tablet@2x.jpg 2x" media="(max-width: 1199px)" type="image/jpg" />
+                <source
+                  srcset="img/img-4-tablet.webp 1x, img/img-4-tablet@2x.webp 2x"
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-4-tablet.jpg 1x, img/img-4-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)"
+                  type="image/jpg"
+                />
 
-                <source srcset="img/img-4.webp 1x, img/img-4@2x.webp 2x" media="(min-width: 1200px)" type="image/webp" />
-                <source srcset="img/img-4.jpg 1x, img/img-4@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                <source
+                  srcset="img/img-4.webp 1x, img/img-4@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="img/img-4.jpg 1x, img/img-4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
                 <img
                   class="team-card__photo"
                   src="img/img-4.jpg"
@@ -559,12 +644,12 @@
         </form>
       </div>
     </div>
-    <!-- <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

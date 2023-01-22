@@ -116,7 +116,7 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .menu-container {
+  .js-menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -139,7 +139,7 @@ a {
     transition: linear 250ms;
     opacity: 0;
   }
-  .menu-container.is-open {
+  .js-menu-container.is-open {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
@@ -147,7 +147,7 @@ a {
   }
 }
 @media (min-width: 768px) {
-  .menu-container {
+  .js-menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -159,7 +159,7 @@ a {
             justify-content: space-between;
   }
 }
-.menu-container__social-links {
+.js-menu-container__social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,42 +167,51 @@ a {
   color: var(--color-akcent);
 }
 @media (max-width: 480px) {
-  .menu-container__social-links {
+  .js-menu-container__social-links {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 @media (min-width: 768px) {
-  .menu-container__social-links {
+  .js-menu-container__social-links {
     display: none;
   }
 }
-.menu-container__item:not(:last-child) {
+.js-menu-container__item:not(:last-child) {
   margin-right: 10px;
   border-right: 1px solid var(--header-border-color);
   padding-right: 10px;
   margin-bottom: 5px;
 }
 
-.header__burger {
+.js-open-menu {
+  position: relative;
+  background-color: var(--background-color-primary);
+  border: none;
+  display: block;
+  z-index: 2;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .js-open-menu {
+    display: none;
+  }
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 0;
   background-color: var(--background-color-primary);
   border: none;
   display: block;
   padding: 10px 0;
   z-index: 1;
 }
-.header__burger__icon-close-burger {
-  display: none;
-}
-.header__burger.is-open .header__burger__icon-close-burger {
-  display: block;
+.js-close-menu__icon-close-burger {
   fill: var(--color-akcent);
 }
-.header__burger.is-open .header__burger__icon-burger {
-  display: none;
-}
 @media (min-width: 768px) {
-  .header__burger {
+  .js-close-menu {
     display: none;
   }
 }
