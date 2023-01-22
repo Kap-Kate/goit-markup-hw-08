@@ -185,11 +185,9 @@ a {
 }
 
 .js-open-menu {
-  position: relative;
   background-color: var(--background-color-primary);
   border: none;
   display: block;
-  z-index: 2;
   padding: 10px 0;
 }
 @media (min-width: 768px) {
@@ -201,6 +199,7 @@ a {
 .js-close-menu {
   position: absolute;
   top: 0;
+  right: 15px;
   background-color: var(--background-color-primary);
   border: none;
   display: block;

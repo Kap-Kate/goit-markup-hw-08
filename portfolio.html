@@ -20,16 +20,29 @@
     <header class="header-portfolio">
       <div class="container header-container">
         <a href="./index.html" class="logo">Web<span class="logo__logo-studio">Studio</span></a>
-        <button class="header__burger" type="button" data-menu-button>
-          <svg class="" width="40px" height="40px" aria-label="Переключатель мобільного меню">
+        <button class="js-open-menu" type="button">
+          <svg width="40px" height="40px">
+            <use class="js-open-menu__icon-burger" href="./img/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <!-- <button class="header__burger" type="button">
+          <svg class="" width="40px" height="40px" >
             <use class="header__burger__icon-burger" href="./img/icons.svg#icon-burger"></use>
             <use
               class="header__burger__icon-close-burger"
               href="./img/icons.svg#icon-close-burger"
             ></use>
           </svg>
-        </button>
-        <div class="menu-container" id="menu-container" data-menu>
+        </button> -->
+        <div class="js-menu-container" id="menu-container">
+           <button class="js-close-menu" type="button">
+            <svg width="40px" height="40px">
+              <use
+                class="js-close-menu__icon-close-burger"
+                href="./img/icons.svg#icon-close-burger"
+              ></use>
+            </svg>
+          </button>
           <nav class="header__nav">
             <ul class="nav-list">
               <li class="nav-list__item">
@@ -63,7 +76,7 @@
               </a>
             </li>
           </ul>
-          <ul class="menu-container__social-links">
+          <ul class="js-menu-container__social-links">
             <li class="menu-container__item"><a href="#">Instagram</a></li>
             <li class="menu-container__item"><a href="#">Twitter</a></li>
             <li class="menu-container__item"><a href="#">Facebook</a></li>
